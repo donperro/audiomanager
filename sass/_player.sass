@@ -1,0 +1,92 @@
+@import "_config"
+
+footer
+	background-color: $azul
+	background-image: url(images/ferrer.png)
+	background-position: 50%
+	background-repeat: no-repeat
+	background-size: auto 40%
+	bottom: 0px
+	height: 80px
+	left: 0
+	position: fixed
+	right: 0
+	.slide-container
+		background-color: $azul-fuerte
+		display: none
+		height: 10px
+		position: absolute
+		width: 100%
+		.slide-percent
+			background-color: #b3e5fc
+			top: 1px
+			height: 8px
+			position: absolute
+			min-width: 50%
+			border-top-right-radius: 8px
+			border-bottom-right-radius: 8px
+	.column
+		display: none
+		align-content: center
+		flex-flow: wrap column
+		justify-content: center
+		padding-bottom: 20px
+		padding-top: 10px
+		&.info
+			padding-bottom: 0;
+			padding-left: 1vw;
+	h2,h5
+		display: block
+		
+	nav
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&.controls
+			width: 100% !important
+		&.volume
+			margin: auto
+			position: relative
+			width: 50% !important
+			.slide-container
+				position: relative
+				width: 90%
+			// 	border-radius: 8px
+			// 	display: none
+			// 	position: relative
+			// 	width: 50%
+			// 	.slide-percent
+			// 		border-radius: 8px
+			// 		margin-left: 1px
+			// 		margin-right: 1px
+	a
+		color: #0288d1
+		&:hover
+			text-shadow: 0 0 5px #FFF
+	.mdi
+		font-size: 30px
+	.copyright
+		background-color: #010d1e	
+		border-radius: 16px
+		bottom: 6px
+		font-size: 10px
+		border-radius: 16px
+		padding: 0 6px
+		position: absolute
+		right: 6px
+	&.is-active
+		background-image: none
+		.column
+			display: flex
+		.slide-container
+			display: block
+			
+
+input::-webkit-input-placeholder
+	color: $white-o
+input::-moz-placeholder
+	color: $white-o
+input:-ms-input-placeholder
+	color: $white-o
+input:-moz-placeholder
+	color: $white-o
